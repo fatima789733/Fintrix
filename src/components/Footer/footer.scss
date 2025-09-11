@@ -1,0 +1,219 @@
+.footer {
+  padding-top: 80px;
+  background-image: url("../../assets/footer-ellipse.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  & > .boxed {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 80px;
+    &__column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 32px;
+
+      & > .body-xl {
+        max-width: 400px;
+      }
+      & > a {
+        opacity: 0.8;
+      }
+    }
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  &__socials {
+    display: flex;
+    gap: 20px;
+  }
+  .hr {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 60px;
+  }
+  //   input button
+  .email-container {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    align-items: center;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 8px 8px 8px 24px;
+  }
+
+  .email-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__bottom {
+    & > p {
+      padding-block: 24px;
+    }
+    text-align: center;
+  }
+}
+
+// responsiveness
+
+@media (max-width: 1030px) {
+  .footer {
+    padding-inline: 50px;
+    & > .boxed {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    &__logo {
+      margin-right: auto;
+    }
+    &__socials {
+      margin-right: auto;
+    }
+    &__top {
+      display: flex;
+      flex-wrap: wrap wrap;
+      align-items: flex-start;
+      gap: 50px;
+      &__column {
+        gap: 15px;
+        align-items: flex-start;
+        & > .body-xl {
+          max-width: 100%;
+        }
+        & > a {
+          opacity: 0.8;
+        }
+      }
+    }
+    .hr {
+      margin-top: 10px;
+      width: 350px;
+    }
+    .email-container {
+      width: 100%;
+      max-width: 400px;
+      padding: 6px 6px 6px 18px;
+    }
+
+    &__bottom {
+      & > p {
+        font-size: 14px;
+        white-space: nowrap;
+        padding-block: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .footer {
+    & > .boxed {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    &__logo {
+      margin-right: auto;
+    }
+    &__socials {
+      margin-right: auto;
+    }
+    &__top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: flex-start;
+      gap: 50px;
+      &__column {
+        gap: 15px;
+        align-items: flex-start;
+        & > .body-xl {
+          max-width: 100%;
+        }
+        & > a {
+          opacity: 0.8;
+        }
+      }
+    }
+    .hr {
+      margin-top: 10px;
+      width: 350px;
+    }
+    .email-container {
+      width: 100%;
+      max-width: 400px;
+      padding: 6px 6px 6px 18px;
+    }
+
+    &__bottom {
+      & > p {
+        font-size: 14px;
+        white-space: nowrap;
+        padding-block: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .footer {
+    & > .boxed {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    &__logo {
+      margin-inline: auto;
+    }
+    &__socials {
+      margin-inline: auto;
+    }
+    &__top {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 50px;
+      &__column {
+        gap: 15px;
+        align-items: center;
+        & > .body-xl {
+          max-width: 100%;
+        }
+        & > a {
+          opacity: 0.8;
+        }
+      }
+    }
+    .hr {
+      margin-top: 10px;
+      width: 350px;
+    }
+    .email-container {
+      width: 100%;
+      max-width: 400px;
+      padding: 6px 6px 6px 18px;
+    }
+
+    &__bottom {
+      & > p {
+        font-size: 14px;
+        white-space: nowrap;
+        padding-block: 12px;
+      }
+    }
+  }
+}

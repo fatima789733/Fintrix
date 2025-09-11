@@ -1,26 +1,156 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "Haffer";
+  src: url("/fonts/haffer/HafferTrial-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Regular */
+@font-face {
+  font-family: "Haffer";
+  src: url("/fonts/haffer/HafferTrial-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Medium */
+@font-face {
+  font-family: "Haffer";
+  src: url("/fonts/haffer/HafferTrial-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Haffer", sans-serif;
+
+  background-image: url("../assets/home-top-ellipse.png"),
+    url("../assets/hero-img-ellipse.png");
+  background-position: top center, center 350px; /* second image pushed down */
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto;
+}
+
+:root {
+  background: #05060f;
+  color: #fff;
+}
+.padding {
+  padding-inline: 100px;
+}
+.boxed {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.heading-primary {
+  font-size: 67px;
+  font-style: normal;
+  font-weight: 570;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+.heading-secondary {
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 570;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+.heading-tertiary {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 570;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+.body-xxl {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 430;
+  line-height: 150%;
+}
+.body-xl {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 430;
+  line-height: 150%;
+}
+.body-l {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 570;
+  line-height: 140%; /* 22.4px */
+}
+.body-m {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%; /* 19.6px */
+}
+.body-sm {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%; /* 16.8px */
+}
+.wt-400 {
+  font-weight: 400;
+}
+.wt-500 {
+  font-weight: 500;
+}
+.dim {
+  opacity: 0.8;
+}
+.gradient {
+  background: linear-gradient(90deg, #fff 0%, #a49adb 126.47%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn-fill {
+  display: flex;
+  padding: 12px 23px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  background: var(
+    --Gradient,
+    linear-gradient(180deg, #a49adb 0%, #6a6294 100%)
+  );
+  box-shadow: 0 0 20.9px 0 rgba(164, 154, 219, 0.3),
+    0 4px 4px 0 rgba(255, 255, 255, 0.25) inset;
+}
+.btn-outline {
+  display: flex;
+  padding: 14px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 9.876px;
+  border-radius: 61px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 14.5px 0 rgba(255, 255, 255, 0.25);
+}
+.icon {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #a49adb 0%, #4c4766 100%);
+}
+
+@media (max-width: 790px) {
+  body {
+    background-image: url("../assets/home-top-ellipse.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
 }
