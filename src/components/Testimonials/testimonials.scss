@@ -59,6 +59,9 @@
     max-width: 300px;
     font-size: 16px;
   }
+  .test {
+    font-size: 44px;
+  }
   .testimonial-grid {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 20px;
@@ -84,11 +87,11 @@
     background-image: none;
   }
   .test {
-    font-size: 40px;
+    font-size: 38px;
   }
   .testimonial-quote {
     max-width: 300px;
-    font-size: 16px;
+    font-size: 15px;
   }
   .testimonial-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -98,7 +101,7 @@
   .testimonial-card {
     width: 330px;
     padding: 24px;
-    min-height: 300px;
+    min-height: 280px;
   }
   .testimonial-info {
     display: flex;
@@ -118,7 +121,8 @@
     gap: 50px;
   }
   .test {
-    font-size: 40px;
+    font-size: 23px;
+    max-width: 250px;
   }
   .testimonial-grid {
     grid-template-columns: repeat(1, 1fr);
@@ -126,8 +130,16 @@
     column-gap: 20px;
   }
   .testimonial-card {
-    width: 320px;
-    padding: 24px;
-    min-height: 300px;
+    width: 290px;
+    padding: 16px;
+    margin-inline: 20px;
+    min-height: 260px;
+  }
+  .testimonial-quote {
+    max-width: 250px;
+    font-size: 14px;
+  }
+  .testimonial-name {
+    font-size: 14px;
   }
 }

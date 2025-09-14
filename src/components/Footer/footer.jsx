@@ -12,16 +12,40 @@ function Footer() {
         <div className="footer__top">
           <div className="footer__top__column">
             <div className=" footer__logo">
-              <Image src={logo} alt="Fintrix Logo" width={36} height={36} />
+              <Image
+                src={logo}
+                alt="Fintrix Logo"
+                className="footer__logo__image"
+                width={36}
+                height={36}
+              />
               <span className="body-xl wt-500">Fintrix</span>
             </div>
-            <p className="body-xl">
+            <p className="body-xl foottext">
               Track spending, grow savings, and stay in control of your money.
             </p>
             <div className="footer__socials">
-              <Image src={fb} alt="Fintrix Logo" width={39} height={39} />{" "}
-              <Image src={ln} alt="Fintrix Logo" width={39} height={39} />{" "}
-              <Image src={tw} alt="Fintrix Logo" width={39} height={39} />
+              <Image
+                src={fb}
+                alt="Fintrix Logo"
+                className="footer__socials__icon"
+                width={39}
+                height={39}
+              />{" "}
+              <Image
+                src={ln}
+                alt="Fintrix Logo"
+                className="footer__socials__icon"
+                width={39}
+                height={39}
+              />{" "}
+              <Image
+                src={tw}
+                alt="Fintrix Logo"
+                className="footer__socials__icon"
+                width={39}
+                height={39}
+              />
             </div>
           </div>
           <div className="footer__top__column">

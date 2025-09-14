@@ -14,7 +14,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar padding">
+    <nav className="navbar">
       <div className="boxed">
         <div className="navbar__logo">
           <Image

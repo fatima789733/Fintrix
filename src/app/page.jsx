@@ -34,8 +34,8 @@ export default function Home() {
             <button className="btn-fill">Get Started</button>
             <button className="btn-outline">Request a demo</button>
           </div>
-          <Image src={heroImg} className="home__hero__image" alt="home-img" />
         </div>
+        <Image src={heroImg} className="home__hero__image" alt="home-img" />
       </section>
 
       {/* dashboard */}
@@ -129,7 +129,13 @@ export default function Home() {
       {/* Finances */}
       <section className="home__finances padding">
         <div className="boxed">
-          <Image src={financeLogo} alt="finance logo" width={72} height={72} />
+          <Image
+            src={financeLogo}
+            alt="finance logo"
+            width={72}
+            height={72}
+            className="home__finances__logo"
+          />
           <h1 className="gradient heading-secondary">
             Take Control of Your Finances Today
           </h1>

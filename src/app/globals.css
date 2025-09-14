@@ -31,9 +31,9 @@ body {
 
   background-image: url("../assets/home-top-ellipse.png"),
     url("../assets/hero-img-ellipse.png");
-  background-position: top center, center 350px; /* second image pushed down */
+  background-position: top, center 350px; /* second image pushed down */
   background-repeat: no-repeat, no-repeat;
-  background-size: auto, auto;
+  background-size: 100% auto, auto;
 }
 
 :root {
@@ -152,5 +152,14 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: auto;
+  }
+  .padding {
+    padding-inline: 40px;
+  }
+}
+
+@media (max-width: 430px) {
+  .padding {
+    padding-inline: 20px;
   }
 }

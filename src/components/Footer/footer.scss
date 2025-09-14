@@ -79,6 +79,13 @@
     }
     &__logo {
       margin-right: auto;
+      &__image {
+        width: 28px;
+        height: 28px;
+      }
+      & > span {
+        font-size: 16px;
+      }
     }
     &__socials {
       margin-right: auto;
@@ -93,6 +100,10 @@
         align-items: flex-start;
         & > .body-xl {
           max-width: 100%;
+          font-size: 15px;
+        }
+        & > .body-lg {
+          font-size: 14px;
         }
         & > a {
           opacity: 0.8;
@@ -106,7 +117,7 @@
     .email-container {
       width: 100%;
       max-width: 400px;
-      padding: 6px 6px 6px 18px;
+      padding: 4px 6px 4px 18px;
     }
 
     &__bottom {
@@ -128,6 +139,13 @@
     }
     &__logo {
       margin-right: auto;
+      &__image {
+        width: 28px;
+        height: 28px;
+      }
+      & > span {
+        font-size: 16px;
+      }
     }
     &__socials {
       margin-right: auto;
@@ -144,6 +162,9 @@
         & > .body-xl {
           max-width: 100%;
         }
+        & > .body-lg {
+          font-size: 14px;
+        }
         & > a {
           opacity: 0.8;
         }
@@ -156,7 +177,7 @@
     .email-container {
       width: 100%;
       max-width: 400px;
-      padding: 6px 6px 6px 18px;
+      padding: 4px 6px 4px 18px;
     }
 
     &__bottom {
@@ -178,11 +199,24 @@
     }
     &__logo {
       margin-inline: auto;
+      &__image {
+        width: 28px;
+        height: 28px;
+      }
+      & > span {
+        font-size: 16px;
+      }
     }
     &__socials {
       margin-inline: auto;
+      &__icon {
+        width: 30px;
+        height: 30px;
+      }
     }
     &__top {
+      display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
       align-items: center;
       text-align: center;
@@ -191,7 +225,12 @@
         gap: 15px;
         align-items: center;
         & > .body-xl {
-          max-width: 100%;
+          // max-width: 100%;
+          font-size: 15px;
+        }
+
+        & > .body-lg {
+          font-size: 14px;
         }
         & > a {
           opacity: 0.8;
@@ -200,7 +239,7 @@
     }
     .hr {
       margin-top: 10px;
-      width: 350px;
+      width: 320px;
     }
     .email-container {
       width: 100%;
